@@ -33,6 +33,7 @@
 
 .m-login .submit{
     display: block;
+    width: 100%;
     height: 40px;
     line-height: 40px;
     margin-top: 20px;

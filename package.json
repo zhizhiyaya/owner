@@ -6,11 +6,13 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.4.8",
+    "body-parser": "^1.15.2",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.3",
     "ejs": "*",
+    "express": "3.4.8",
+    "marked": "^0.3.5",
     "mongodb": "2.1.18",
-//    "connect-mongo": "*",
-//    "connect-flash": "*",
-    "mongoose": "4.5.2"
+    "zepto": "^1.0.1"
   }
 }

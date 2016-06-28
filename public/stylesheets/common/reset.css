@@ -47,6 +47,7 @@ body, textarea, select, input, button {
 }
 
 body {
+    min-width: 600px;
     background-color: #fff;
 }
 
