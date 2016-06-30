@@ -2,14 +2,14 @@
 <!--<nav>
     tag 列表
 </nav>-->
-<from class="m-edit-form" method="post" action="/admin/save">
-    <div class="">
+<form class="m-edit-form" id="js-editBlog">
+    <!--<div class="">-->
         <lable>添加标题</lable><input type="text" name="title" />
-    </div>
+    <!--</div>-->
     <span>添加标签</span>
     <textarea type="text" name="content" placeholder="markdown 编辑内容">  </textarea>
     <!--<a href="/admin/save" >保存</a>-->
     <button type="submit" id="js-saveBlog">保存</button>
-</from>
+</form>
 <!--<a href=" save " >编辑</a>-->
 <%- include manageFooter %>

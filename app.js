@@ -27,6 +27,7 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));// 设置了静态文件目录为 public 文件夹
+app.use(express.static(path.join(__dirname, 'assets')));// 设置了静态文件目录为 public 文件夹
 app.use(bodyParser.urlencoded({
   extended: true
 }));

@@ -5,18 +5,23 @@ var Blog = require('../models/blog.js');
 
 module.exports = function (app) {
 
-    app.post('/admin/login', function (req, res, next) {
-        console.log(req.body);
-        res.send();
+    app.get('/manage/login', function (req, res, next) {
+        res.render('login', {'pageName': 'login'});
     });
 
     // edit 编辑页面
-    app.get('/admin/edit', function (req, res, next) {
-        res.render('edit', {'pageName': 'edit'});
+    app.get('/manage/edit', function (req, res, next) {
+        res.render('edit', {'pageName': 'manageEdit'});
     });
 
+    // test
+    //app.get('/manage/save', function (req, res, next) {
+    //    console.log(req.body + 'a');
+    //    res.send({'status': 0});
+    //});
+
     // 保存编辑的 blog 内容
-    app.post('/admin/save', function (req, res, next) {
+    app.post('/manage/save', function (req, res, next) {
         console.log(req.body);
         //var newBlog = new Blog({
         //    title: req.body.title,
@@ -28,11 +33,13 @@ module.exports = function (app) {
         //newBlog.save(function (err, user) {
         //    if (err) {
         //        req.flash('error', err);
+        //        res.send();
         //        return res.redirect('/');//保存失败返回
         //    }
         //
         //    req.flash('success', '保存成功!');
         //    res.redirect('/');//保存成功后返回主页
         //});
+        res.send({'status': 0})
     });
 };

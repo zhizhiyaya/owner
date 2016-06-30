@@ -7,8 +7,9 @@ var mongoose = require('mongoose');
 // 关于 mongodb 的安全性，mongodb 我印象中安全机制很残废，用户名密码那套都做得不好，更
 // 别提细致的用户权限控制了。不过不用担心，mongodb 的默认配置只接受来自本机的请求，内网都连不上。
 // 当需要在内网中为其他机器提供 mongodb 服务时，或许可以去看看 iptables 相关的东西。
+//module.exports =  mongoose.createConnection('mongodb://localhost/myblog');
 mongoose.connect('mongodb://localhost/myblog');
-module.exports =  mongoose.connection;
+module.exports = mongoose.connection;
 // 上面说了，我推荐在同一个 collection 中使用固定的数据形式。
 // 在这里，我们创建了一个名为 Cat 的 model，它在数据库中的名字根据传给 mongoose.model 的第一个参数决定，mongoose 会将名词变为复数，在这里，collection 的名字会是 `cats`。
 // 这个 model 的定义是，有一个 String 类型的 name，String 数组类型的 friends，Number 类型的 age。
