@@ -34,6 +34,7 @@ node_modules
 *.ipr
 *.iml
 *.iws
+*.xml
 
 # temp ignore
 *.log
