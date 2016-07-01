@@ -2,14 +2,27 @@
 <!--<nav>
     tag 列表
 </nav>-->
-<form class="m-edit-form" id="js-editBlog">
-    <!--<div class="">-->
-        <lable>添加标题</lable><input type="text" name="title" />
+<form class="m-blog-form" id="js-editBlog">
+    <div class="blog-title" >
+        <input type="text" name="title" placeholder="标题 ^_^"/>
+    </div>
+    <!--<div class="m-tool-bar tool-bar">-->
+
     <!--</div>-->
-    <span>添加标签</span>
-    <textarea type="text" name="content" placeholder="markdown 编辑内容">  </textarea>
-    <!--<a href="/admin/save" >保存</a>-->
-    <button type="submit" id="js-saveBlog">保存</button>
+    <div class="m-tag tag">
+        <div class="tokens">
+            <span class="token">tag</span>
+            <input maxlength="20" class="taginput" style="width: 60px;">
+        </div>
+    </div>
+
+    <div class="blog-content" >
+        <textarea type="text" name="content" placeholder="markdown 编辑内容">  </textarea>
+    </div>
+    <div class="u-btn-wrap action-bar">
+        <button class="u-btn" type="" id="js-scan">预&nbsp;览</button>
+        <button class="u-btn u-light-btn" type="submit" id="js-saveBlog">保&nbsp;存</button>
+    </div>
 </form>
-<!--<a href=" save " >编辑</a>-->
+
 <%- include manageFooter %>

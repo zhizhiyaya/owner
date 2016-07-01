@@ -19,12 +19,16 @@ var app = express();
 app.set('port', process.env.PORT || 3000);//设置端口为 process.env.PORT 或 3000。
 app.set('views', path.join(__dirname, 'views'));//模板文件的路径
 app.set('view engine', 'ejs');//使用的模板引擎为ejs
+
 app.use(flash());
 app.use(express.favicon());//地址栏的图标
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
+app.use(express.compress()); //通过gzip / deflate压缩响应数据. 这个中间件应该放置在所有的中间件最前面以保证所有的返回都是被压缩的
 app.use(express.methodOverride());
+app.use(express.bodyParser());
+
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));// 设置了静态文件目录为 public 文件夹
 app.use(express.static(path.join(__dirname, 'assets')));// 设置了静态文件目录为 public 文件夹

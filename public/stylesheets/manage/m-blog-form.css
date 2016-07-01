@@ -1,2 +1,48 @@
-.m-blog-form {height: 550px;width: 800px;}
-.m-blog-form .title {}
+.m-blog-form {
+    height: 500px;
+    width: 600px;
+    padding: 28px 32px;
+}
+
+.m-blog-form .blog-title {
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #dfdfdf;
+    box-shadow: inset 1px 1px 1px #dfdfdf;
+}
+
+.m-blog-form .blog-content {
+    height: 320px;
+    line-height: 28px;
+    border: 1px solid #dfdfdf;
+    /*box-shadow: inset -1px -1px 1px #dfdfdf;*/
+}
+.m-blog-form .tag{
+    border-width: 0 1px;
+    border-color: #dfdfdf;
+    border-style: solid;
+}
+.m-blog-form .blog-title input, .m-blog-form .blog-content textarea {
+    position: relative;
+    z-index: 10;
+    /*width: 478px;*/
+    line-height: 30px;
+    padding: 5px 10px;
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.m-blog-form .blog-content input{
+    height: 30px;
+}
+.m-blog-form .action-bar{
+    height: 36px;
+    margin-top: 20px;
+
+}
+/*.m-blog-form .blog-content textarea{*/
+
+/*}*/
