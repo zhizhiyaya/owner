@@ -44,8 +44,8 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(1);
-	var util = __webpack_require__(2);
+	__webpack_require__(2);
+	var util = __webpack_require__(3);
 
 	var ADD_BLOG_URL = '/manage/save';
 	bindEvent();
@@ -110,7 +110,8 @@
 
 
 /***/ },
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ function(module, exports) {
 
 	/* Zepto v1.0-1-ga3cab6c - polyfill zepto detect event ajax form fx - zeptojs.com/license */
@@ -1087,7 +1088,7 @@
 	}(Zepto)
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports) {
 
 	var util = {

@@ -12,38 +12,18 @@ var blogSchma = mongoose.Schema({
     content: String,
     createDate: { type: Date, default: Date.now}
 });
-blogSchma.methods.saveBlog = function speak( callback) {
+blogSchma.methods.saveBlog = function ( callback) {
     var promise = this.save();
     console.log(this._id); // _id new 之后就有的,
-    //callback();
-        //打开数据库
-        //mongodb.open(function (err, db) {
-        //    if (err) {
-        //        console.log(err);
-        //        return callback(err);//错误，返回 err 信息
-        //    }
-        //    this.save();
-        //    mongodb.close();
-        //    // 读取 blogs 集合
-        //    //db.collection('blogs', function (err, collection) {
-        //    //    if (err) {
-        //    //        mongodb.close();
-        //    //        return callback(err);//错误，返回 err 信息
-        //    //    }
-        //    //    //将数据插入 blogs 集合
-        //    //    collection.insert(blog, {
-        //    //        safe: true
-        //    //    }, function (err, blog) {
-        //    //        mongodb.close();
-        //    //        if (err) {
-        //    //            return callback(err);//错误，返回 err 信息
-        //    //        }
-        //    //        callback(null, blog[0]);//成功！err 为 null，并返回存储后的用户文档
-        //    //    });
-        //    //});
-        //});
-    //return this.model('Blog').find();
 };
+
+blogSchma.methods.getBlogList = function (callback) {
+    //var promise = this.find();
+    //callback && callback();
+    return this.model('Blog').find(callback);
+};
+
+
 var Blog = mongoose.model('Blog', blogSchma);
 module.exports = Blog;
 

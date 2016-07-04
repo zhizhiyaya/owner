@@ -1,0 +1,30 @@
+.m-nav {
+    padding-top: 34px
+}
+
+.m-nav li {
+    padding: 10px 0
+}
+.m-nav a {
+    color: #ff704c;
+}
+.m-nav a:hover, .sch-txt {
+    color: #510;
+}
+.m-sch {
+    zoom: 1
+}
+
+.sch-form {
+    display: inline-block;
+    height: 24px
+}
+
+.m-nav .sch-txt {
+    padding: 0 3px;
+    height: 20px;
+    line-height: 20px;
+    width: 90px;
+    border: 0;
+    background:#ff704c;
+}

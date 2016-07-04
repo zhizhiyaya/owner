@@ -1,137 +1,303 @@
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
+/***
+** https://developer.mozilla.org 的样式
+**/
 
-code[class*="language-"],
-pre[class*="language-"] {
-	color: black;
-	background: none;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+code[class*=language-], pre[class*=language-] {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: #b3d4fc;
+code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection {
+    text-shadow: none;
+    background: #b3d4fc
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: #b3d4fc;
+code[class*=language-] ::selection, code[class*=language-]::selection, pre[class*=language-] ::selection, pre[class*=language-]::selection {
+    text-shadow: none;
+    background: #b3d4fc
 }
 
 @media print {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		text-shadow: none;
-	}
+    code[class*=language-], pre[class*=language-] {
+        text-shadow: none
+    }
 }
 
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+pre[class*=language-] {
+    padding: 1em;
+    overflow: auto
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #f5f2f0;
+:not(pre) > code[class*=language-], pre[class*=language-] {
+    background: #f5f2f0
 }
 
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+:not(pre) > code[class*=language-] {
+    padding: .1em;
+    border-radius: .3em
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+    color: #708090
 }
 
 .token.punctuation {
-	color: #999;
+    color: #999
 }
 
 .namespace {
-	opacity: .7;
+    opacity: .7
 }
 
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #905;
+.token.boolean, .token.constant, .token.deleted, .token.number, .token.property, .token.symbol, .token.tag {
+    color: #905
 }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #690;
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+    color: #690
 }
 
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-	color: #a67f59;
-	background: hsla(0, 0%, 100%, .5);
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    color: #a67f59;
+    background: hsla(0, 0%, 100%, .5)
 }
 
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #07a;
+.token.atrule, .token.attr-value, .token.keyword {
+    color: #07a
 }
 
 .token.function {
-	color: #DD4A68;
+    color: #DD4A68
 }
 
-.token.regex,
-.token.important,
-.token.variable {
-	color: #e90;
+.token.important, .token.regex, .token.variable {
+    color: #e90
 }
 
-.token.important,
-.token.bold {
-	font-weight: bold;
+.token.bold, .token.important {
+    font-weight: 700
 }
+
 .token.italic {
-	font-style: italic;
+    font-style: italic
 }
 
 .token.entity {
-	cursor: help;
+    cursor: help
+}
+
+pre[data-line] {
+    position: relative;
+    padding: 1em 0 1em 3em
+}
+
+.line-highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 1em;
+    background: hsla(24, 20%, 50%, .08);
+    background: -moz-linear-gradient(left, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+    background: -webkit-linear-gradient(left, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+    background: -o-linear-gradient(left, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+    background: linear-gradient(left, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+    pointer-events: none;
+    line-height: inherit;
+    white-space: pre
+}
+
+.line-highlight:before, .line-highlight[data-end]:after {
+    content: attr(data-start);
+    position: absolute;
+    top: .4em;
+    left: .6em;
+    min-width: 1em;
+    padding: 0 .5em;
+    background-color: hsla(24, 20%, 50%, .4);
+    color: #f4f1ef;
+    font: 700 65%/1.5 sans-serif;
+    text-align: center;
+    vertical-align: .3em;
+    border-radius: 999px;
+    text-shadow: none;
+    box-shadow: 0 1px #fff
+}
+
+.line-highlight[data-end]:after {
+    content: attr(data-end);
+    top: auto;
+    bottom: .4em
+}
+
+pre.line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber
+}
+
+pre.line-numbers > code {
+    position: relative
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.line-numbers-rows > span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: .8em;
+    text-align: right
+}
+
+.token.key {
+    color: #960
+}
+
+:not(pre):not(code) > code[class*=language-], pre.syntaxbox, pre.twopartsyntaxbox, pre[class*=language-] {
+    background: #fafbfc;
+    border-left: 5px solid #558abb;
+    color: #4d4e53;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-weight: 400;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+code[class*=language-] > code[class*=language-] {
+    background-color: none
+}
+
+pre[class*=language-] {
+    margin: 0 0 20px
+}
+
+pre[class*=language-] span.comment {
+    display: inherit
+}
+
+code[class*=language-], pre[class*=language-] {
+    color: #4d4e53;
+    text-shadow: none
+}
+
+pre em code[class*=language-] {
+    background: 0 0;
+    border-left: 0
+}
+
+.line-highlight {
+    padding: 0
+}
+
+.line-highlight:before {
+    display: none
+}
+
+pre.syntaxbox, pre.twopartsyntaxbox {
+    background: #dde4e9;
+    white-space: pre-wrap;
+    text-overflow: ellipsis ellipsis
+}
+
+pre.twopartsyntaxbox {
+    margin-bottom: 0
+}
+
+.syntaxbox-help {
+    height: 1.2em;
+    float: left;
+    font-size: 20px;
+    width: 1.1em;
+    margin-left: -1.1em;
+    margin-top: -4px;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center
+}
+
+.syntaxbox-help.isOpaque, .syntaxbox-help:focus, .syntaxbox-help:hover {
+    opacity: 1
+}
+
+.error pre[class*=language-] {
+    margin: 10px 0 0;
+    background: 0 0
+}
+
+:not(pre) > code.example-bad[class*=language-], :not(pre) > code.example-good[class*=language-], pre.example-bad[class*=language-], pre.example-good[class*=language-] {
+    position: relative
+}
+
+:not(pre) > code.example-bad[class*=language-]:before, :not(pre) > code.example-good[class*=language-]:before, pre.example-bad[class*=language-]:before, pre.example-good[class*=language-]:before {
+    border-radius: 100%;
+    font-family: FontAwesome;
+    font-size: 20px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    z-index: 10;
+    speak: none
+}
+
+:not(pre) > code.example-good[class*=language-]:before, pre.example-good[class*=language-]:before {
+    background: #f8faf2;
+    color: #70a300;
+    content: '\f118'
+}
+
+:not(pre) > code.example-bad[class*=language-]:before, pre.example-bad[class*=language-]:before {
+    background: #fef5f4;
+    color: #ea3b28;
+    content: '\f119'
+}
+
+:not(pre) > code.example-good[class*=language-], pre.example-good[class*=language-] {
+    background: #f8faf2;
+    background: linear-gradient(rgba(0, 0, 0, 0) 9px, rgba(0, 0, 0, .02) 9px, rgba(0, 0, 0, .02) 10px), linear-gradient(90deg, rgba(0, 0, 0, 0) 9px, rgba(0, 0, 0, .02) 9px, rgba(0, 0, 0, .02) 10px), linear-gradient(rgba(0, 0, 0, 0) 29px, rgba(0, 0, 0, .02) 29px, rgba(0, 0, 0, .02) 30px), linear-gradient(90deg, rgba(0, 0, 0, 0) 29px, rgba(0, 0, 0, .02) 29px, rgba(0, 0, 0, .02) 30px), linear-gradient(#f8faf2, #f8faf2);
+    background-size: 10px 10px, 10px 10px, 30px 30px, 30px 30px, cover;
+    border-left: 5px solid #70a300
+}
+
+:not(pre) > code.example-bad[class*=language-], pre.example-bad[class*=language-] {
+    background: #fef5f4;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, .01) 45%, rgba(0, 0, 0, .01) 55%, rgba(0, 0, 0, 0) 55%), linear-gradient(135deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, .01) 45%, rgba(0, 0, 0, .01) 55%, rgba(0, 0, 0, 0) 55%), linear-gradient(45deg, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, .01) 20px, rgba(0, 0, 0, .01) 21px, rgba(0, 0, 0, 0) 21px), linear-gradient(135deg, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, .01) 20px, rgba(0, 0, 0, .01) 21px, rgba(0, 0, 0, 0) 21px), linear-gradient(#fef5f4, #fef5f4);
+    background-size: 10px 10px, 10px 10px, 30px 30px, 30px 30px, cover;
+    border-left: 5px solid #ea3b28
 }

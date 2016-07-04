@@ -5,15 +5,37 @@
 	<title>枝枝丫丫Blog</title>
 	<link rel="stylesheet" href="/stylesheets/manageStyle.css">
 </head>
-<body>
-	<header>
-		<h1></h1>
-	</header>
+<body class="g-doc">
+<div class="g-bd box">
+	<div class="g-sd">
+		<h1 class="m-hdimg">
+			<!-- 头像图片需要使用宽度和高度均为180px的图片  -->
+			<a href="/">
+				<span class="blog-ttl" id="blog-ttl">
+					枝枝丫丫
+				</span>
+				<!--<span class="hd-img" id="hd-img">-->
+					<img class="hd-img" src="/images/me.jpg" />
+				<!--</span>-->
+			</a>
+		</h1>
+		<ul class="m-nav">
+			<li><a href="/manage/list">随笔</a></li>
+			<li><a href="/manage/edit">码文</a></li>
+			<li><a href="/manage/editTag">TAG</a></li>
+			<li class="m-sch">
+				<a href="#" class="sch-lnk" id="sch-lnk">搜索</a>
+				<form method="get" action="/search" class="sch-form f-dn"><input type="text" name="q" class="sch-txt" id="sch-txt"></form>
+			</li>
+		</ul>
+	</div>
+	<div class="g-mn">
+		<div class="g-mnc" >
+			<div class="m-about">
+				可爱之人必有过人之处
+			</div>
 
-	<nav>
-		<span><a title="主页" href="/">home</a></span>
-		<span><a title="登录" href="/manage/login">login</a></span>
-		<!--<span><a title="注册" href="/reg">register</a></span>-->
-	</nav>
-
-	<article>
+<!-- footer 里有 三个 结束的 div -->
+		<!--</div>-->
+	<!--</div>-->
+<!--</div>-->

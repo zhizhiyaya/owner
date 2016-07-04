@@ -1,12 +1,14 @@
 .m-blog-form {
     height: 500px;
     width: 600px;
-    padding: 28px 32px;
+    /*padding: 28px 32px;*/
+    background: rgba(255, 255, 255, .85);
 }
 
 .m-blog-form .blog-title {
-    height: 38px;
-    line-height: 38px;
+    height: 28px;
+    line-height: 28px;
+    padding: 5px 10px;
     border: 1px solid #dfdfdf;
     box-shadow: inset 1px 1px 1px #dfdfdf;
 }
@@ -14,6 +16,7 @@
 .m-blog-form .blog-content {
     height: 320px;
     line-height: 28px;
+    padding: 5px 10px;
     border: 1px solid #dfdfdf;
     /*box-shadow: inset -1px -1px 1px #dfdfdf;*/
 }
@@ -25,9 +28,9 @@
 .m-blog-form .blog-title input, .m-blog-form .blog-content textarea {
     position: relative;
     z-index: 10;
-    /*width: 478px;*/
+    width: 100%;
+    height: 100%;
     line-height: 30px;
-    padding: 5px 10px;
     margin: 0;
     color: #333;
     font-size: 14px;

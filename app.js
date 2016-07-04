@@ -19,7 +19,6 @@ var app = express();
 app.set('port', process.env.PORT || 3000);//设置端口为 process.env.PORT 或 3000。
 app.set('views', path.join(__dirname, 'views'));//模板文件的路径
 app.set('view engine', 'ejs');//使用的模板引擎为ejs
-
 app.use(flash());
 app.use(express.favicon());//地址栏的图标
 app.use(express.logger('dev'));

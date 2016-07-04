@@ -18,8 +18,6 @@ function bindEvent() {
                 contentType :"application/json;charset=UTF-8",
                 success: function (res) {
 
-                    console.log(JSON.stringify(res) + 'test');
-
                 },
                 fail: function () {
 

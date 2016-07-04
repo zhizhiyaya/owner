@@ -8,6 +8,15 @@
     background: rgba(0, 0, 0, .2);
 }
 
+.g-clr::after{
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+    overflow: hidden;
+}
+
 .u-btn-wrap{
     display: -webkit-box;
     display: -webkit-flex;
@@ -19,7 +28,7 @@
     justify-content: flex-end;
 
 }
-.u-btn{
+.u-btn-wrap .u-btn{
     display: block;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -39,15 +48,14 @@
     text-shadow: -1px -1px 2px #f8f8f8;
     background: #e2e2e2;
 }
-.u-btn:active{
+.u-btn-wrap .u-btn:active{
     background: #ececec;
 }
-.u-light-btn{
+.u-btn-wrap .u-light-btn{
     color: #fff;
     text-shadow: none;
     background: #8dba00;
 }
-.u-light-btn:active{
+.u-btn-wrap .u-light-btn:active{
     background: #add600;
 }
-

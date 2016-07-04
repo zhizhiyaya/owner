@@ -1,0 +1,46 @@
+.m-hdimg,
+.m-hdimg a,
+.m-hdimg .hd-img,
+.m-hdimg img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 60px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+/* 垂直居中对齐, 父级元素 line-height = height; 子级 inline-block , lineheight : 1.4em; vertical-align: center;*/
+.m-hdimg a {
+    position: relative;
+    background-color:#f30;
+    line-height: 180px;
+}
+
+.m-hdimg .blog-ttl {
+    display: inline-block;
+    line-height: 1.4em;
+    vertical-align: middle;
+    padding: 30px 10px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    opacity: 1;
+    color:#fff;
+}
+
+.m-hdimg .hd-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.m-hdimg .hd-img {
+    opacity: 0;
+}
+
+.m-hdimg a:hover .blog-ttl {
+    opacity: 0;
+}
+
+.m-hdimg a:hover .hd-img, .m-hdimg a.hover .hd-img {
+    opacity: 1;
+}

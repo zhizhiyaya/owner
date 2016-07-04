@@ -16,8 +16,8 @@ module.exports = {
     entry: {
         manageIndex: './public/javascripts/manage/index.js',
         manageEdit: './public/javascripts/manage/edit.js',
-        login: './public/javascripts/manage/login.js'
-        //index: './public/javascripts/stage/index.js'
+        login: './public/javascripts/manage/login.js',
+        list: './public/javascripts/manage/list.js'
     },
 
     //入口文件输出配置
