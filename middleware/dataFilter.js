@@ -1,6 +1,7 @@
 /**
 **  filter response data
 **/
+
 var util = require('../public/javascripts/common/util.js');
 
 module.exports = {
@@ -15,17 +16,11 @@ module.exports = {
 
         return data;
     },
-    formatResData: function (data, msg) {
+    formatResData: function (data) {
 
         var resData = {status: 0};
-        if (data) {
-            resData.data = data;
-        }
-        if (msg) {
-            resData.msg = msg;
-        }
-
-        return resData;
+        console.log(util.extend({}, resData, data));
+        return util.extend({}, resData, data);
     }
 };
 

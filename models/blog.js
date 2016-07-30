@@ -1,6 +1,8 @@
 var mongodb = require('./db');
-
 var mongoose = require('mongoose');
+var Promise = require("bluebird");
+//var Mongoose = Promise.promisifyAll(mongoose);
+
 
 mongodb.on('error', console.error.bind(console, 'connection error:'));
 //mongodb.once('open', function() {
@@ -12,9 +14,15 @@ var blogSchma = mongoose.Schema({
     content: String,
     createDate: { type: Date, default: Date.now}
 });
-blogSchma.methods.saveBlog = function ( callback) {
-    var promise = this.save();
-    console.log(this._id); // _id new 之后就有的,
+blogSchma.methods.saveBlog = function ( resolveFn, rejectFn) {
+    var self = this;
+    self.save().then(function(){
+        console.log(resolveFn);
+        resolveFn && resolveFn(self._id);
+    }, function (err) {
+        console.log(err);
+        rejectFn && rejectFn(err);
+    });
 };
 
 blogSchma.methods.getBlogList = function (callback) {

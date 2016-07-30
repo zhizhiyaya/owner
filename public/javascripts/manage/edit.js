@@ -11,19 +11,22 @@ function bindEvent() {
         var formData = $('#js-editBlog').serialize();
         formData = util.formatFormData(formData);
 
-        return $.ajax({
+        $.ajax({
                 url: ADD_BLOG_URL,
                 type: 'POST',
                 data: JSON.stringify(formData),
-                contentType :"application/json;charset=UTF-8",
-                success: function (res) {
-
-                },
-                fail: function () {
-
+                contentType :"application/json;charset=UTF-8"
+            })
+            .done(function(res){
+                if (res.status === 0) {
+                    alert(res.errMsg);
+                } else {
+                    alert(res.errMsg);
                 }
             })
-            //.done(function(){})
+            .fail(function (err) {
+                debugger
+            });
 
     });
 
