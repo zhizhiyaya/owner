@@ -1,7 +1,17 @@
-<%- include header %>
-<form method="post">
-  用户名：<input type="text" name="name"/><br />
-  密码：  <input type="password" name="password"/><br />
-         <input type="submit" value="登录"/>
+<%- include manageHeader %>
+<form class="m-login" id="login-form" method="post" action="/admin/login">
+    <div class="input-box">
+        <input class="input-text" type="text" name="username" placeholder="用户名" />
+    </div>
+    <div class="input-box">
+        <input class="input-text" type="password" name="password" placeholder="密码" />
+    </div>
+    <!--<a class="submit" href="/admin/login" type="submit">登录</a>-->
+    <button class="submit" type="submit">登录</button>
 </form>
-<%- include footer %>
+
+<section class="m-scroller">
+    <div class="g-mask" style="background: url(http://imgcdn.ph.126.net/msMyIlDY49iOrX6KfmkHBQ==/6608854332282905023.jpg) no-repeat"></div>
+    <div class="g-mask"></div>
+</section>
+<%- include manageFooter %>

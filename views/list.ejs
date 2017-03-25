@@ -1,0 +1,29 @@
+<%- include manageHeader %>
+<!--<nav>
+    tag 列表
+</nav>-->
+<ul class="m-blog-list" id="js-listWrap">
+    <% for(var i = 0; i < blogs.length; i++) {%>
+
+    <li class="item">
+        <div class="g-clr">
+           <% if (blogs[i].title) { %>
+            <h3 class="title">
+                <%= blogs[i].title %>
+            </h3>
+            <% } %>
+            <div class="content">
+                <%- blogs[i].content %>
+            </div>
+        </div>
+        <div class="info-box">
+            <a class="tool" href="/manage/edit/<%= blogs[i].id %>">编辑</a>
+            <a class="tool" href="/manage/scan/<%= blogs[i].id %>">查看</a>
+            <span class="tool">热度</span>
+        </div>
+    </li>
+
+    <% } %>
+</ul>
+
+<%- include manageFooter %>

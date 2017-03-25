@@ -1,0 +1,292 @@
+@font-face {
+    font-family: FontAwesome;
+    src: url("/static/styles/libs/font-awesome/fonts/fontawesome-webfont.90186830c9c5.eot");
+    src: url("/static/styles/libs/font-awesome/fonts/fontawesome-webfont.90186830c9c5.eot?#iefix") format('embedded-opentype'), url("/static/styles/libs/font-awesome/fonts/fontawesome-webfont.fdf491ce5ff5.woff") format('woff'), url("/static/styles/libs/font-awesome/fonts/fontawesome-webfont.4f0022f25672.ttf") format('truetype'), url("/static/styles/libs/font-awesome/fonts/fontawesome-webfont.776d58f453c8.svg#fontawesomeregular") format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: inherit;
+    font-weight: inherit
+}
+
+article, aside, audio, canvas, figcaption, figure, figure img, footer, header, hgroup, main, nav, section, video {
+    display: block
+}
+
+a img {
+    border: 0
+}
+
+ol, ul {
+    list-style-type: none
+}
+
+html {
+    background: #fff;
+    font-size: 14px
+}
+
+body {
+    color: #4d4e53;
+    background-image: url("../../img/header-background.4c35c324fbeb.png");
+    background-repeat: repeat;
+    background-position: 0 0, 0 0, 0 0;
+    background-color: #eaeff2;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5
+}
+
+html[data-ffo-opensans=false]:not(.no-js) body {
+    font-family: Arial, sans-serif;
+    letter-spacing: .01em;
+    word-spacing: .03em
+}
+
+aside {
+    float: right;
+    border: 1px solid #eaeff2;
+    background: #f4f7f8;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+aside > :last-child {
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+main {
+    background: #fff;
+    min-height: 200px
+}
+
+main > .center {
+    padding-top: 30px
+}
+
+footer {
+    background: #fff;
+    padding: 30px 0 0;
+    font-style: italic;
+    font-size: 12px;
+    font-size: .857rem
+}
+
+html[data-ffo-opensanslight=false]:not(.no-js) footer {
+    letter-spacing: -.01em;
+    word-spacing: 0
+}
+
+footer .column-strip {
+    padding-top: 10px
+}
+
+footer label {
+    padding-right: 4px
+}
+
+footer select {
+    font-style: normal
+}
+
+details {
+    clear: both;
+    display: block;
+    margin-bottom: 20px
+}
+
+details + details {
+    margin-top: -20px
+}
+
+summary {
+    display: block;
+    color: #0095dd
+}
+
+summary h1, summary h2, summary h3, summary h4, summary h5, summary h6 {
+    display: inline-block
+}
+
+hr {
+    border-top: 1px solid #4d4e53;
+    height: 0;
+    margin: 20px 0
+}
+
+@media all and (max-width: 1024px) {
+    footer {
+        border-top: 1px solid #eaeff2
+    }
+}
+
+@media all and (max-width: 768px) {
+    footer {
+        padding-bottom: 20px
+    }
+}
+
+@media print {
+    footer, header {
+        display: none
+    }
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-family: 'Open Sans Light', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    line-height: 1
+}
+
+html[data-ffo-opensanslight=false]:not(.no-js) h1, html[data-ffo-opensanslight=false]:not(.no-js) h2, html[data-ffo-opensanslight=false]:not(.no-js) h3, html[data-ffo-opensanslight=false]:not(.no-js) h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: -.04em;
+    line-height: 1;
+    word-spacing: .01em
+}
+
+h2, h3 {
+    font-family: 'Open Sans', Arial, sans-serif
+}
+
+html[data-ffo-opensans=false]:not(.no-js) h2, html[data-ffo-opensans=false]:not(.no-js) h3 {
+    font-family: Arial, sans-serif
+}
+
+h1 {
+    font-size: 48px;
+    font-size: 3.429rem;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+    line-height: 1.5
+}
+
+html[data-ffo-opensanslight=false]:not(.no-js) h1 {
+    line-height: 1.515
+}
+
+h2 {
+    font-size: 30px;
+    font-size: 2.143rem;
+    letter-spacing: -1px;
+    font-weight: 700
+}
+
+html[data-ffo-opensans=false]:not(.no-js) h2 {
+    font-weight: 400;
+    letter-spacing: 0;
+    word-spacing: -.02em
+}
+
+h3 {
+    font-size: 24px;
+    font-size: 1.714rem;
+    letter-spacing: -.021em
+}
+
+html[data-ffo-opensans=false]:not(.no-js) h3 {
+    line-height: 1.01;
+    letter-spacing: .002em;
+    word-spacing: .032em
+}
+
+h4 {
+    font-size: 18px;
+    font-size: 1.286rem;
+    letter-spacing: -.014em
+}
+
+html[data-ffo-opensans=false]:not(.no-js) h4 {
+    letter-spacing: -.044em;
+    word-spacing: .22em
+}
+
+h5 {
+    font-size: 16px;
+    font-size: 1.143rem;
+    letter-spacing: -.014em
+}
+
+html[data-ffo-opensans=false]:not(.no-js) h5 {
+    letter-spacing: -.024em;
+    word-spacing: .04em
+}
+
+p {
+    margin-bottom: 24px
+}
+
+blockquote {
+    padding: 20px 25px;
+    border-left: 5px solid #ccc;
+    margin-bottom: 24px;
+    background: #eee;
+    position: relative
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+blockquote:after, blockquote:before {
+    color: #ccc;
+    font-size: 40px;
+    position: absolute
+}
+
+blockquote:before {
+    top: 0;
+    left: 10px;
+    content: '\201C'
+}
+
+blockquote:after {
+    bottom: 0;
+    right: 10px;
+    content: '\201D'
+}
+
+a {
+    color: #0095dd;
+    text-decoration: none
+}
+
+a:active, a:focus, a:hover {
+    text-decoration: underline
+}
+
+a i[class^=icon-]:before {
+    cursor: pointer
+}
+
+a[name] {
+    color: inherit;
+    text-decoration: none
+}
+
+abbr[title] {
+    cursor: help
+}
+
+sup {
+    position: relative;
+    top: -.15em;
+    vertical-align: top
+}

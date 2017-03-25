@@ -1,0 +1,18 @@
+.m-pager {
+    padding-top: 80px
+}
+
+.m-pager a {
+    float: left;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    opacity: .7;
+}
+
+.m-pager a:hover {
+    opacity: .3;
+}
+
+.m-pager .prev{background-color:#4566c7;}
+.m-pager .next{background-color:#f30;}

@@ -16,6 +16,9 @@ User.prototype.save = function(callback) {
       password: this.password,
       email: this.email
   };
+
+  mongodb.on('error', console.error.bind(console, 'connection error:'));
+
   //打开数据库
   mongodb.open(function (err, db) {
     if (err) {

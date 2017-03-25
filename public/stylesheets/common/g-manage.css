@@ -1,0 +1,262 @@
+.g-doc{
+    background: url(../../images/bg.png) no-repeat fixed center -10px
+}
+.g-doc .g-bd {
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px 0;
+    _padding-bottom: 0;
+}
+.g-doc .g-sd {
+    position: fixed;
+    float: left;
+    width: 180px;
+    text-align: center;
+}
+
+.g-mn {
+    float: right;
+    width: 100%;
+    margin-left: -180px;
+    padding-top: 56px
+}
+
+.g-mnc {
+    margin-left: 260px
+}
+
+.g-ft {
+    padding-top: 50px
+}
+
+
+
+.m-about {
+    margin-bottom: 80px;
+    font-size: 11px;
+    -webkit-text-size-adjust: none;
+    line-height: 200%;
+    color: #bd757c;
+}
+
+.m-post {
+    padding-bottom: 45px
+}
+
+.post-ctc a, .post-ctc a:hover {
+    text-decoration: underline
+}
+
+.post-ttl {
+    padding-bottom: 10px
+}
+
+.post-ctc .post-ttl a, .post-ctc .post-ttl a:hover {
+    font-size: 18px;
+    text-decoration: none
+}
+
+.m-post .post-ctc ul, .m-post .post-ctc ol {
+    padding: 0 0 0 25px
+}
+
+.m-post .post-ctc ul li {
+    list-style: disc outside
+}
+
+.m-post .post-ctc ol li {
+    list-style: decimal outside
+}
+
+.m-post .post-ctc blockquote {
+    border-left: solid 1px #888;
+    padding-left: 10px
+}
+
+.m-post .post-ctc p, .m-post .post-ctc ul, .m-post .post-ctc ol, .m-post .post-ctc blockquote, .text, .digest {
+    margin: 0 0 15px
+}
+
+.m-info a {
+    margin-right: 15px
+}
+
+.m-info .cc {
+    margin-right: 0
+}
+
+.m-post img, .m-post object, .m-post embed {
+    max-width: 100%;
+    _width: 100%
+}
+
+.m-post-audio .player object, .m-post-audio .player embed {
+    width: 257px
+}
+
+.m-post-video object, .m-post-video embed {
+    width: 100%
+}
+
+.m-post .cover img, .m-post .post-thumbnail img {
+    float: left;
+    width: 200px;
+    margin: 0 25px 10px 0
+}
+
+.m-post .post-thumbnail img {
+    margin-top: 6px
+}
+
+.m-post .player {
+    margin-bottom: 10px;
+    *margin-bottom: 15px
+}
+
+.m-post img {
+    margin-bottom: 5px
+}
+
+.m-detailpage .m-post {
+    padding-bottom: 15px;
+    border-bottom: solid 1px #ccc
+}
+
+.m-info-detail {
+    padding-top: 15px
+}
+
+.m-info-detail .tag {
+    width: 280px
+}
+
+.m-info-detail .source {
+    width: 200px;
+    text-align: right
+}
+
+.tag li {
+    display: inline;
+    margin-right: 10px
+}
+
+.tag a, .source a {
+    display: inline-block
+}
+
+.source a {
+    margin-left: 10px
+}
+
+.m-cmthot {
+    padding: 35px 0
+}
+
+.m-cprt, .m-cprt a {
+    color: #999
+}
+
+.f-dn {
+    display: none
+}
+
+.cc_1, .cc_2, .cc_3, .cc_4, .cc_5, .cc_6 {
+    height: 23px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 100%;
+    /*background: url(http://img.ph.126.net/_gP2BbqT5KISbEBDzdM59A==/5629517126399181477.png) no-repeat left top;*/
+    /*_background-image: url(http://img.ph.126.net/qMkiK4nBbgVvmtKWduXfTQ==/5629517126399181478.png)*/
+}
+
+.cc_1 {
+    width: 48px;
+    background-position: 0 5px
+}
+
+.cc_2 {
+    width: 48px;
+    background-position: -55px -19px
+}
+
+.cc_3 {
+    width: 32px;
+    background-position: 0 -43px
+}
+
+.cc_4 {
+    width: 32px;
+    background-position: -70px -66px
+}
+
+.cc_5 {
+    width: 32px;
+    background-position: 0 -90px
+}
+
+.cc_6 {
+    width: 14px;
+    background-position: -87px -113px
+}
+
+.m-hot {
+    padding-top: 20px
+}
+
+.nctitle {
+    padding-bottom: 10px;
+    font-size: 14px
+}
+
+.notes {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    font-size: 12px;
+    zoom: 1
+}
+
+.notes:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden
+}
+
+.notes .note {
+    list-style: none;
+    margin: 0;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #ccc
+}
+
+.notes .avatar {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: 0
+}
+
+.notes .clear {
+    clear: both;
+    height: 0;
+    overflow: hidden
+}
+
+.notes .action {
+    float: right;
+    width: 470px
+}
+
+.notes blockquote {
+    padding: 0 0 0 15px;
+    margin-left: 30px;
+    overflow: hidden;
+    word-wrap: break-word;
+    border-left: 1px solid #888
+}
